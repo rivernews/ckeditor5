@@ -1,3 +1,8 @@
+# Forked README
+
+- [How to fork ckeditor and start building and publish](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html#forking-an-existing-build)
+
+
 CKEditor 5 balloon block editor build
 ==============================================
 
