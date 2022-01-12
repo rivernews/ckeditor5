@@ -1,6 +1,6 @@
 {
   "name": "@shaungc/ckeditor5-custom-balloon-block",
-  "version": "31.3.0",
+  "version": "31.3.1",
   "description": "An UX-optimized custom balloon editor build of CKEditor 5. Include commonly used plugins. Originally: The balloon editor build of CKEditor 5 with a block toolbar – the best browser-based rich text editor.",
   "keywords": [
     "wysiwyg",
