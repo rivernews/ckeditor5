@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-balloon-block",
-  "version": "31.1.0",
-  "description": "The balloon editor build of CKEditor 5 with a block toolbar – the best browser-based rich text editor.",
+  "name": "@shaungc/ckeditor5-custom-balloon-block",
+  "version": "31.3.1",
+  "description": "An UX-optimized custom balloon editor build of CKEditor 5. Include commonly used plugins. Originally: The balloon editor build of CKEditor 5 with a block toolbar – the best browser-based rich text editor.",
   "keywords": [
     "wysiwyg",
     "rich text",
@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "^31.1.0",
+    "@ckeditor/ckeditor5-alignment": "^31.1.0",
     "@ckeditor/ckeditor5-autoformat": "^31.1.0",
     "@ckeditor/ckeditor5-basic-styles": "^31.1.0",
     "@ckeditor/ckeditor5-block-quote": "^31.1.0",
@@ -64,17 +65,20 @@
     "node": ">=14.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "shaungc forked CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
+  "homepage": "https://shaungc.com",
   "bugs": "https://github.com/ckeditor/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/rivernews/ckeditor5.git",
     "directory": "packages/ckeditor5-build-balloon-block"
   },
   "scripts": {
     "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "patch-publish": "npm version patch && npm publish --access=public && git push",
+    "minor-publish": "npm version minor && npm publish --access=public && git push",
     "preversion": "npm run build"
   }
 }
